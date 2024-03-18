@@ -1,0 +1,132 @@
+body {
+    background-color: #010129;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 15px;
+}
+
+.stock-info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.stock-chart {
+    display: flex;
+    flex-direction: column;
+    background-color: #010145;
+    column-gap: 15px;
+    border-radius: 10px;
+    width: 100%;
+    height: 30rem;
+    justify-content: space-between;
+}
+
+.chart {
+    position: relative;
+}
+
+.chart-tooltip {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    background-color: rgb(1, 1, 69);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.x-axis-label {
+    position: absolute;
+    bottom: -20px;
+    font-size: 10px;
+    color: #888;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+.buttons button {
+    border-radius: 10px;
+    background-color: #020274;
+    color: #ffffff;
+    /* border: none; */
+    font-size: 18px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.stock-detail {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.stock-main-info {
+    display: flex;
+    flex-direction: row;
+    row-gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    column-gap: 15px;
+}
+
+.stock-list {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    width: 20%;
+    height: 30rem;
+    justify-content: start;
+    row-gap: 10px;
+}
+
+.stock-update {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.stock-name {
+    background-color: #010166;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 65px;
+    height: 30px;
+    cursor: pointer;
+    color: #90ee8f;
+}
+
+.stock-profit, #stock-profit {
+    color: #90ee8f;
+}
+
+.stock-profit.red, #stock-profit.red {
+    color: red;
+}
